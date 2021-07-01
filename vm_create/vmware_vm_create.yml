@@ -6,7 +6,7 @@
   - name: Create VM with vmware_guest module
     vmware_guest:
       folder: Tower
-      datacenter: DC-Katowice
+      datacenter: Datacenter1
       name: "{{ vm_name }}"
       state: poweredon
       template: rhel8_template
