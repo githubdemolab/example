@@ -2,11 +2,12 @@
 - name: Create container app
   hosts: all
   gather_facts: no
+  tasks:
 
-- name: Create application
-  k8s:
-    state: present
-    template:
-      path: 'kubernetes_objects.yaml'
-      variable_start_string: '{{'
-      variable_end_string: '}}'
+  - name: Create application
+    k8s:
+      state: present
+      template:
+        path: 'kubernetes_objects.yaml'
+        variable_start_string: '{{'
+        variable_end_string: '}}'
