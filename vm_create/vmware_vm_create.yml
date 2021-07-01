@@ -1,6 +1,7 @@
 ---
 - name: VMware VM Create plabook with parameters
   hosts: all
+  gather_facts: no
 
   tasks:
   - name: Create VM with vmware_guest module
