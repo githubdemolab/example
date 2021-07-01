@@ -1,5 +1,5 @@
 ---
-- name: Create container app
+- name: Destroy container app
   hosts: all
   gather_facts: no
   connection: local
