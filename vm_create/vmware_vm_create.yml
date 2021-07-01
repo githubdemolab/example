@@ -5,3 +5,18 @@
   tasks:
   - name: Create VM with vmware_guest module
     vmware_guest:
+      folder: Tower
+      datacenter: DC-Katowice
+      name: "{{ vm_name }}"
+      state: poweredon
+      template: rhel8_template
+      hardware:
+        memory_mb: "{{ vm_memory }}"
+        num_cpus: 2
+      customization:
+        hostname: "{{ vm_name }}.example.local"
+      wait_for_ip_address: true
+      cluster: Cluster1
+      datastore: compelent
+    delegate_to: localhost
+    register: deploy
