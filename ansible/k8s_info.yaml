@@ -3,14 +3,14 @@
   run_once: true
   tasks:
 
-  - name: Get a list of all pods from any namespace
-    k8s_info:
-      kind: Pod
-    register: pod_list
-    delegate_to: localhost
+    #  - name: Get a list of all pods from any namespace
+    #k8s_info:
+    # kind: Pod
+    #register: pod_list
+    #delegate_to: localhost
 
 
   - name: print info
     debug:
-      var: pod_list
+      msg: "Test"
 
