@@ -1,0 +1,32 @@
+---
+- name: Create container app
+  hosts: all
+  gather_facts: no
+  connection: local
+
+  tasks:
+
+  - name: Copy file
+    template:
+      src: k8s_objects.j2
+      dest: /tmp/all.yaml
+
+  - name: Create application
+    k8s:
+      state: present
+      definition: "{{ lookup('template', '/tmp/all.yaml') }}"
+
+
+  - name: Show url
+    debug:
+      msg: "Twoja aplikacja jest pod adresem {{ APP_NAME }}.apps.ocp1.example.lab"
+
+  - name: Email
+    mail:
+      subject: Aplikacja {{ APP_NAME }} jest już gotowa!
+      body: Twoja aplikacja dostępna jest pod adresem: https://{{ APP_NAME }}.apps.ocp1.example.lab
+      to:
+        - Artur Poczekalewicz <artur@poczekalewicz.net>
+      
+
+

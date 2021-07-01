@@ -1,0 +1,16 @@
+---
+- name: Create container app
+  hosts: all
+  gather_facts: no
+  connection: local
+
+  tasks:
+  - name: Delete project: container-demo
+    k8s:
+      name: container-demo
+      api_version: v1
+      kind: Project
+      state: absent
+
+
+
