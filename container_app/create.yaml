@@ -23,8 +23,8 @@
 
   - name: Email
     mail:
-      subject: Aplikacja {{ APP_NAME }} jest już gotowa!
-      body: Twoja aplikacja dostępna jest pod adresem: https://{{ APP_NAME }}.apps.ocp1.example.lab
+      subject: "Aplikacja {{ APP_NAME }} jest już gotowa!"
+      body: "Twoja aplikacja dostępna jest pod adresem: https://{{ APP_NAME }}.apps.ocp1.example.lab"
       to:
         - Artur Poczekalewicz <artur@poczekalewicz.net>
       
