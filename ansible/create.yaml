@@ -20,3 +20,13 @@
   - name: Show url
     debug:
       msg: "Twoja aplikacja jest pod adresem {{ APP_NAME }}.apps.ocp1.example.lab"
+
+  - name: Email
+    mail:
+      subject: Aplikacja {{ APP_NAME }} jest już gotowa!
+      body: Twoja aplikacja dostępna jest pod adresem: https://{{ APP_NAME }}.apps.ocp1.example.lab
+      to:
+        - Artur Poczekalewicz <artur@poczekalewicz.net>
+      
+
+
