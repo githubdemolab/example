@@ -5,7 +5,7 @@
   connection: local
 
   tasks:
-  - name: Delete project: container-demo
+  - name: Delete project container-demo
     k8s:
       name: container-demo
       api_version: v1
