@@ -28,7 +28,7 @@ spec:
       containers:
       - env:
         - name: TEXT
-          value: Hello
+          value: "{{ APP_TEXT | default('Hello world', true) }}"
         image: quay.io/quaydemolab/phpservice@sha256:ac3d56c2abf9321d50d571a66ef4ed4d54f81fcc2f8715bd9d4056053dc57234
         imagePullPolicy: IfNotPresent
         name: container-demo
@@ -69,7 +69,7 @@ metadata:
   name: container-demo
   namespace: container-demo
 spec:
-  host: container-demo.apps.ocp1.example.lab
+  host: "{{ APP_HOST | default('container-demo', true) }}.apps.ocp1.example.lab"
   port:
     targetPort: 8080-tcp
   to:
