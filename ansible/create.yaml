@@ -1,6 +1,6 @@
 ---
 - name: Create container app
-  hosts: all
+  hosts: localhost
   gather_facts: no
   tasks:
 
