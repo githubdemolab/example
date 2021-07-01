@@ -7,7 +7,7 @@
   tasks:
   - name: Create VM with vmware_guest module
     vmware_guest:
-      folder: Tower
+      folder: RedHat
       datacenter: Datacenter1
       name: "{{ vm_name }}"
       state: poweredon
