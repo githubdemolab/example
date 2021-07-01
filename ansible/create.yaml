@@ -2,6 +2,6 @@
   k8s:
     state: present
     template:
-      path: 'all.yaml'
+      path: 'kubernetes_objects.yaml'
       variable_start_string: '{{'
       variable_end_string: '}}'
