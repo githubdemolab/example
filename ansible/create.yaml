@@ -1,0 +1,7 @@
+- name: Create application
+  k8s:
+    state: present
+    template:
+      path: 'all.yaml'
+      variable_start_string: '{{'
+      variable_end_string: '}}'
