@@ -1,5 +1,5 @@
 - name: k8s
-  hosts: all
+  hosts: localhost
   run_once: true
   tasks:
 
