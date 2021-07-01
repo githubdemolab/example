@@ -8,3 +8,9 @@
     k8s_info:
       kind: Node
       namespace: default
+    register: zmienna
+
+  - name: print info
+    debug:
+      msg: "Info: {{ zmienna }}"
+
