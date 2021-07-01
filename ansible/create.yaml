@@ -6,8 +6,13 @@
 
   tasks:
 
+  - name: Template a file to /etc/files.conf
+    template:
+      src: k8s_objects.j2
+      dest: /tmp/all.yaml
+
   - name: Create application
     k8s:
       state: present
-      definition: "{{ lookup('template', 'all.yml') }}"
+      definition: "{{ lookup('template', '/tmp/all.yml') }}"
 
