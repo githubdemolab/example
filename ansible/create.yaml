@@ -9,5 +9,4 @@
   - name: Create application
     k8s:
       state: present
-      template:
-        path: 'kubernetes_objects.yaml'
+      template: 'kubernetes_objects.yaml'
