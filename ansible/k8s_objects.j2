@@ -69,7 +69,7 @@ metadata:
   name: container-demo
   namespace: container-demo
 spec:
-  host: "{{ APP_HOST | default('container-demo', true) }}.apps.ocp1.example.lab"
+  host: "{{ APP_NAME | default('container-demo', true) }}.apps.ocp1.example.lab"
   port:
     targetPort: 8080-tcp
   to:

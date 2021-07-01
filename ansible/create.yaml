@@ -16,3 +16,7 @@
       state: present
       definition: "{{ lookup('template', '/tmp/all.yaml') }}"
 
+
+  - name: Show url
+    debug:
+      msg: "Twoja aplikacja jest pod adresem {{ APP_NAME }}.apps.ocp1.example.lab"
