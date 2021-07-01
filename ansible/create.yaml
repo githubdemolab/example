@@ -9,5 +9,3 @@
       state: present
       template:
         path: 'kubernetes_objects.yaml'
-        variable_start_string: '{{'
-        variable_end_string: '}}'
