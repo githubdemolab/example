@@ -1,3 +1,8 @@
+---
+- name: Create container app
+  hosts: all
+  gather_facts: no
+
 - name: Create application
   k8s:
     state: present
