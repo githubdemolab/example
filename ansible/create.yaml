@@ -9,4 +9,5 @@
   - name: Create application
     k8s:
       state: present
-      template: 'kubernetes_objects.yaml'
+      definition: "{{ lookup('template', 'all.yml') }}"
+
