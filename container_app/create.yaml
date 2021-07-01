@@ -25,7 +25,7 @@
     mail:
       subject: "Aplikacja {{ APP_NAME }} jest już gotowa!"
       body: "Twoja aplikacja dostępna jest pod adresem: https://{{ APP_NAME }}.apps.ocp1.example.lab"
-      from: "root@tower.ap.vlab (noreply - Information about request)"
+      from: "Automation robot - noreply"
       to:
         - Artur Poczekalewicz <artur@poczekalewicz.net>
       
