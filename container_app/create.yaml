@@ -24,7 +24,7 @@
   - name: Email
     mail:
       subject: "Aplikacja {{ APP_NAME }} jest już gotowa!"
-      body: "Twoja aplikacja dostępna jest pod adresem: https://{{ APP_NAME }}.apps.ocp1.example.lab"
+      body: "Twoja aplikacja dostępna jest pod adresem: http://{{ APP_NAME }}.apps.ocp1.example.lab"
       from: "Automation robot - noreply"
       to:
         - demouser <techdemolab@gmail.com>
