@@ -27,7 +27,7 @@
 
   - name: Szybki debug
     debug:
-      msg: deploy
+      var: deploy
 
   # - name: Email
   #   mail:
