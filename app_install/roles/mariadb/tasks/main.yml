@@ -7,7 +7,7 @@
       - mariadb-server
  #     - MySQL-python
       - libselinux-python
-      - libsemanage-python
+ #     - libsemanage-python
     state: installed
 
 - name: Configure SELinux to start mysql on any port
