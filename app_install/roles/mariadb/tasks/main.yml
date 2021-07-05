@@ -5,6 +5,8 @@
   yum: 
     name:
       - mariadb-server
+      - python3-libselinux
+      - python3-libsemanage
  #     - MySQL-python
  #     - libselinux-python
  #     - libsemanage-python
