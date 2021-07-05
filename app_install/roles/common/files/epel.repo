@@ -1,6 +1,6 @@
 [epel]
 name=Extra Packages for Enterprise Linux 8 - $basearch
-baseurl=http://download.fedoraproject.org/pub/epel/8/$basearch
+baseurl=https://ftp.icm.edu.pl/pub/Linux/dist/epel/8/Everything/x86_64/
 # mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=epel-7&arch=$basearch
 # failovermethod=priority
 enabled=1
