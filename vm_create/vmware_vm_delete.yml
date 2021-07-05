@@ -1,0 +1,13 @@
+---
+- name: VMware VM Delete plabook
+  hosts: all
+  gather_facts: no
+  connection: local
+
+
+- name: Remove a virtual machine from inventory
+  vmware_guest:
+    name: "{{ vm_name }}"
+    delete_from_inventory: True
+    state: absent
+  delegate_to: localhost
