@@ -6,5 +6,5 @@
     - common
     - mariadb
     - nginx
-    # - php-fpm
+    - php-fpm
     # - wordpress
