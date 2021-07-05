@@ -35,4 +35,4 @@
       body: "Twoja maszyna o nazwie {{ vm_name }} jest dostępna pod adresem {{ deploy.instance.hw_eth0.ipaddresses[0] }}"
       from: "Automation robot - noreply"
       to:
-        - Artur Poczekalewicz <artur@poczekalewicz.net>
+        - demouser <techdemolab@gmail.com>
