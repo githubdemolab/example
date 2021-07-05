@@ -29,10 +29,10 @@
     debug:
       var: deploy.instance.hw_eth0.ipaddresses[0]
 
-  # - name: Email
-  #   mail:
-  #     subject: "Maszyna {{ vm_name }} jest gotowa !"
-  #     body: "Twoja aplikacja dostępna jest pod adresem: https://{{ APP_NAME }}.apps.ocp1.example.lab"
-  #     from: "Automation robot - noreply"
-  #     to:
-  #       - Artur Poczekalewicz <artur@poczekalewicz.net>
+  - name: Email
+    mail:
+      subject: "Maszyna {{ vm_name }} jest gotowa !"
+      body: "Twoja maszyna o nazwie {{ vm_name }} jest dostępna pod adresem {{ deploy.instance.hw_eth0.ipaddresses[0] }}"
+      from: "Automation robot - noreply"
+      to:
+        - Artur Poczekalewicz <artur@poczekalewicz.net>
