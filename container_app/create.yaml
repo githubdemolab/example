@@ -27,7 +27,4 @@
       body: "Twoja aplikacja dostępna jest pod adresem: https://{{ APP_NAME }}.apps.ocp1.example.lab"
       from: "Automation robot - noreply"
       to:
-        - Artur Poczekalewicz <artur@poczekalewicz.net>
-      
-
-
+        - demouser <techdemolab@gmail.com>
