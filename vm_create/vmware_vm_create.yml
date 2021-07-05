@@ -27,7 +27,7 @@
 
   - name: Szybki debug
     debug:
-      var: deploy
+      var: deploy.hw_eth0.ipaddresses[0]
 
   # - name: Email
   #   mail:
