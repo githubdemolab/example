@@ -25,10 +25,6 @@
     delegate_to: localhost
     register: deploy
 
-  - name: Szybki debug
-    debug:
-      var: deploy.instance.hw_eth0.ipaddresses[0]
-
   - name: Email
     mail:
       subject: "Maszyna {{ vm_name }} jest gotowa !"
