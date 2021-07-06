@@ -7,9 +7,7 @@
       - mariadb-server
       - python3-libselinux
       - python3-libsemanage
- #     - MySQL-python
- #     - libselinux-python
- #     - libsemanage-python
+      - python3-PyMySQL
     state: installed
 
 - name: Configure SELinux to start mysql on any port
@@ -32,10 +30,6 @@
     owner: mysql 
     group: mysql 
     mode: 0775
-
-# - name: Task pause
-#   pause:
-#     seconds: 15
 
 - name: Start MariaDB Service
   service: 
