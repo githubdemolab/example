@@ -51,7 +51,7 @@
 
 - name: install SEManage
   yum: 
-    pkg: policycoreutils-python 
+    pkg: policycoreutils-python-utils
     state: present
 
 - name: set the SELinux policy for the Wordpress directory
