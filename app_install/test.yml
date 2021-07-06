@@ -5,5 +5,5 @@
   tasks:
   - name: filter tests
     debug:
-      vars: inventory_hostname
+      var: inventory_hostname
     when: '"db" in inventory_hostname'
