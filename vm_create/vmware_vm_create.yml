@@ -18,7 +18,9 @@
       networks:
       - name: DSwitch-VM Network
       customization:
-        hostname: "{{ vm_name }}.example.local"
+        hostname: "{{ vm_name }}"
+        dns_servers:
+          - 8.8.8.8 
       wait_for_ip_address: true
       cluster: Cluster1
       datastore: compelent
