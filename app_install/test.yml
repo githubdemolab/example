@@ -1,0 +1,9 @@
+---
+- name: Filter tests
+  hosts: all
+
+  tasks:
+  - name: filter tests
+    debug:
+      vars: inventory_hostname
+    when: '"db" in inventory_hostname'
