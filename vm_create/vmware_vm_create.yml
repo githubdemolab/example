@@ -5,7 +5,7 @@
   connection: local
 
   vars:
-  vm_notyfication: no
+    vm_notyfication: no
 
   tasks:
   - name: Create VM with vmware_guest module
