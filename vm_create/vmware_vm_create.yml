@@ -4,6 +4,9 @@
   gather_facts: no
   connection: local
 
+  vars:
+  vm_notyfication: no
+
   tasks:
   - name: Create VM with vmware_guest module
     vmware_guest:
@@ -34,3 +37,4 @@
       from: "Automation robot - noreply"
       to:
         - demouser <techdemolab@gmail.com>
+    when: vm_notyfication != yes

@@ -8,3 +8,9 @@
     - nginx
     - php-fpm
     - wordpress
+
+  post_tasks:
+  - name: Register app url
+    set_stats:
+      data:
+        app_url: "{{ ansible_host }}"

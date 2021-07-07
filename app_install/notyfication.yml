@@ -1,0 +1,14 @@
+---
+- name: Send notyfication
+  hosts: all
+  gather_facts: no
+  connection: local
+
+  tasks:
+  - name: Email
+    mail:
+      subject: "Maszyna Aplikacja jest gotowa !"
+      body: "Twoja aplikacja jest dostępna pod adresem http://{{ app_url }}.{{ nginx_por }}"
+      from: "Automation robot - noreply"
+      to:
+        - demouser <techdemolab@gmail.com>
