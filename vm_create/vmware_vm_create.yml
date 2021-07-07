@@ -5,7 +5,7 @@
   connection: local
 
   vars:
-    vm_notyfication: "no"
+    vm_notification: "no"
 
   tasks:
   - name: Create VM with vmware_guest module
@@ -37,4 +37,4 @@
       from: "Automation robot - noreply"
       to:
         - demouser <techdemolab@gmail.com>
-    when: vm_notyfication != "yes"
+    when: vm_notification != "yes"
