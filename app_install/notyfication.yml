@@ -7,7 +7,7 @@
   tasks:
   - name: Email
     mail:
-      subject: "Maszyna Aplikacja jest gotowa !"
+      subject: "Maszyna Aplikacja na maszynie {{ vm_name }} jest gotowa !"
       body: "Twoja aplikacja jest dostępna pod adresem http://{{ app_url }}:{{ nginx_port }}"
       from: "Automation robot - noreply"
       to:
